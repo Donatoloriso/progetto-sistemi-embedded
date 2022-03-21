@@ -1,0 +1,25 @@
+From c4b35e1d80d90a92af517000d6958337cc834579 Mon Sep 17 00:00:00 2001
+From: Luca Miccio <lucmiccio@gmail.com>
+Date: Fri, 17 Dec 2021 12:06:01 +0100
+Subject: [PATCH] Patch esame
+
+Signed-off-by: Luca Miccio <lucmiccio@gmail.com>
+---
+ init/main.c | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/init/main.c b/init/main.c
+index 0252ef02e313..7f66c67a9f4b 100644
+--- a/init/main.c
++++ b/init/main.c
+@@ -946,6 +946,7 @@ asmlinkage __visible void __init __no_sanitize_address start_kernel(void)
+ 	page_alloc_init();
+ 
+ 	pr_notice("Kernel command line: %s\n", saved_command_line);
++	pr_notice("Kernel command line: Level 1 of RTES project\n", saved_command_line);
+ 	/* parameters may set static keys */
+ 	jump_label_init();
+ 	parse_early_param();
+-- 
+2.17.1
+
