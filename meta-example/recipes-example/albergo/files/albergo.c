@@ -250,14 +250,14 @@ int main (int argc, char **argv) {
  
  
   gruppi = atoi(argv[2]);
-  if (gruppi < 0) {
+  if (gruppi <= 0) {
     printf("Numero di gruppi deve essere MAGGIORE DI ZERO!\n");
     exit(3);
   }  
   
   
   singoli = atoi(argv[3]);
-  if (singoli < 0) {
+  if (singoli <= 0) {
     printf("Numero di singoli deve essere MAGGIORE DI ZERO!\n");
     exit(4);
   }  
